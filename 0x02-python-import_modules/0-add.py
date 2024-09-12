@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if _name_ == "_main_":
-    form add_0 import add
+    from add_0 import add
     a = 1
     b = 2
     result = add(a, b)
