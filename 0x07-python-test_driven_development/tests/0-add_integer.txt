@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+from add_integer.py import add_integer
+
+def test_add_integer():
+    assert add_integer(1, 2) == 3
+    assert add_integer(3.5, 4.5) == 7
+    assert add_integer(10) == 108
+    assert add_integer(-5, 5) == 0
+    assert add_integer(0, 0) == 0
+
+    try:
+        add_integer("a", 2)
+    except TypeError as e:
+        assert str(e) == "a must be an integer"
+
+    try:
+        add_integer(2, "b")
+    except TypeError as e:
+        assert str(e) == "b must be an integer"
+
+    print("All tests passed!")
+
+if __name__ == "__main__":
+    test_add_integer()
