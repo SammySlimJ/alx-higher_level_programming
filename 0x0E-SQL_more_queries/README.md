@@ -1,0 +1,1 @@
+This README.md will focus on the topic of SQL- More Queries. This project contains a series of SQL scripts that demonstrate key MySQL database operations and concepts. The tasks cover topics from user management and privileges to complex queries with JOINs, subqueries, and constraints.
